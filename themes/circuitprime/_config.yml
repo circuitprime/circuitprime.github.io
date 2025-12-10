@@ -1,0 +1,414 @@
+head:
+  favicon:
+    ico: "favicon/favicon.ico"
+    small: "favicon/favicon.svg"
+    medium: "favicon/favicon.svg"
+    apple_touch_icon: "favicon/apple-touch-icon.ico"
+    safari_pinned_tab: "favicon/favicon-96x96.svg"
+
+  opengraph:
+    enable: true
+    type:
+    twitter_card: summary_large_image
+    twitter_id:
+    twitter_site:
+    image: page.thumbnail
+    fb_admins:
+    fb_app_id:
+
+  custom_head:
+    - '<link rel="preconnect" href="https://fonts.googleapis.com">'
+    - '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+    - '<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">'
+
+navbar:
+  sitename: CircuitPrime
+
+  menu:
+    # - name: 首页
+    #   url: /
+    # - name: 标签
+    #   url: /tags/
+    # - name: 归档
+    #   url: /archives/
+    # - name: 友链
+    #   url: /friends/
+    # - name: Page
+    #   url: /page/
+
+  sticky: true
+
+cover:
+  sitename: CircuitPrime
+
+  # avatar: "favicon/favicon.svg"
+
+  description: Your daily dose of smart tech insights that keep you ahead of the curve
+
+style:
+  color:
+    main_color: "#0a0e27"
+    main_color_dark: "#ffffff"
+    selection_color: "#00c0e0"
+
+  radius:
+    main_radius: 5px
+
+  space:
+    main_space: 3.5rem
+    sm_space: 1.5rem
+
+  highlight:
+    default:
+    darkmode:
+
+  hljs:
+    default:
+    darkmode:
+
+  prismjs:
+    default:
+    darkmode:
+
+meta:
+  title: "CircuitPrime Blog"
+
+  author:
+    name: CircuitPrime
+    url: https://circuitprime.site
+
+  date:
+    title: ""
+    format: "YYYY-MM-DD"
+
+  updated:
+    title: ""
+    format:
+
+  thumbnail:
+    enable: false
+    relative: false
+    default:
+
+  expire:
+    enable: false
+    duration: 120
+
+  auto_excerpt:
+    enable: true
+    length: 150
+
+  toc:
+    enable: false
+    list_number: false
+
+  copyright:
+    enable: false
+
+    custom_text:
+      # - ''
+      # - ''
+
+comments:
+  use: # utterances |  disqus | disqusjs | valine | minivaline | gitalk | gitment | levere | changyan | wildfire | twikoo
+
+  # utterances
+  # Docs: https://utteranc.es/
+  # Tips: Make sure you have installed [utterances app](https://github.com/apps/utterances) in your repo
+  utterances:
+    enable: false
+    repo: # Repository
+    issueTerm: title # Blog post ↔️ issue mapping: pathname | url | title | og:title
+    theme: github-light # Theme: github-light | github-dark | github-dark-orange | icy-dark | dark-blue | photon-dark
+    label: # Issue label
+
+  # Disqus
+  disqus:
+    shortname:
+
+  # DisqusJS
+  disqusjs:
+    shortname:
+    siteName:
+    api:
+    apikey:
+    admin: ""
+    adminLabel:
+    nesting: 2
+
+  # Valine
+  valine:
+    appId:
+    appKey:
+    placeholder:
+    path:
+    avatar:
+    meta: [nick, mail, link]
+    pageSize:
+    lang:
+    visitor:
+    highlight:
+    avatarForce:
+    recordIP:
+    serverURLs:
+    enableQQ:
+    requiredFields: [nick, mail]
+    emojiCDN:
+    emojiMaps:
+
+  # MiniValine
+  minivaline:
+    appId:
+    appKey:
+    mode:
+    placeholder:
+    pathname:
+    adminEmailMd5:
+    master:
+    friends:
+    tagMeta:
+    math:
+    md:
+    lang:
+    emoticonUrl:
+    NoRecordIP:
+    maxNest:
+    pageSize:
+    enableQQ:
+    visitor:
+    serverURLs:
+
+  # Giscus
+  giscus:
+    repo:
+    repoId:
+    category:
+    categoryId:
+    mapping:
+    strict:
+    position:
+    theme:
+    lang:
+
+  # Gitalk
+  gitalk:
+    repo:
+    owner:
+    clientID:
+    clientSecret:
+
+  # Gitment
+  gitment:
+    repo:
+    owner:
+    client_id:
+    client_secret:
+
+  # Artalk
+  artalk:
+    serverUrl:
+    placeholder:
+    noComment:
+    defaultAvatar:
+    pageKey:
+    gravatar:
+      cdn:
+    readMore:
+      pageSize:
+      autoLoad:
+    emoticons:
+
+  # Livere 来比力
+  livere:
+    livere_uid:
+
+  # 畅言
+  changyan:
+    appid:
+    conf:
+    thread_key_type: path # id | path，单独定义时候用 “id”
+
+  # Wildfire
+  wildfire:
+    database_provider: firebase # firebase | wilddog
+    wilddog_site_id:
+    firebase_api_key:
+    firebase_auth_domain:
+    firebase_database_url:
+    firebase_project_id:
+    firebase_storage_bucket:
+    firebase_messaging_sender_id:
+    theme: light # light | dark
+    locale: en
+
+  # Twikoo
+  twikoo:
+    envId: # 你的 CloudBase 环境 ID
+
+analytics:
+  google_site_id:
+  gtags_site_id:
+  baidu_site_id:
+  cnzz_site_id:
+  cloudflare_site_id:
+  umami:
+    id:
+    url:
+
+footer:
+  statistics:
+    use:
+
+  copyright_since: 2023
+
+  custom_text:
+    # - ''
+    # - ''
+
+lazyload:
+  enable: false
+  loadingImage:
+
+search:
+  enable: false
+  path: search.json
+  field: All # Page | Post | All
+
+note: false
+
+fold:
+  enable: true
+  summary:
+  motion:
+
+fancybox:
+  enable: false
+  auto: false
+
+back_to_top: false
+
+darkmode: true
+
+mermaid:
+  enable: false
+  options:
+
+vendors:
+  # main style css
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.4/dist/css/style/main.min.css
+  # Version: 1.4
+  style:
+
+  # darkmode
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.4/dist/css/style/dark.min.css
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.4/dist/js/darkmode.min.js
+  # Version 1.4
+  darkmode:
+    css:
+    js:
+
+  # code highlight css
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.2/dist/css/highlight/
+  # Version: 1.4
+  highlight:
+
+  # highlight.js theme
+  # https://cdn.jsdelivr.net/npm/highlight.js@10.1.2/styles/
+  # Version: 10.1.2
+  hljs:
+
+  # prism.js theme
+  # https://cdn.jsdelivr.net/npm/prismjs@1.21.0/themes/
+  # Version: 1.21.0
+  prism:
+
+  # Lazyload js
+  # https://github.com/verlok/lazyload
+  # Version: 17.1.2
+  lazyload:
+
+  # back_to_top button
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.4/dist/js/b2t.min.js
+  # Version 1.4
+  back_to_top:
+
+  # local search plugin
+  # https://cdn.jsdelivr.net/npm/hexo-theme-cards@1.4/dist/js/local-search.min.js
+  # Version 1.4
+  local_search:
+
+  # DisqusJS
+  # https://github.com/SukkaW/DisqusJS
+  # Version 3.0
+  disqusjs:
+    css:
+    js:
+
+  # Valine comments system
+  # https://github.com/xcss/Valine/
+  # Version: 1.4.14
+  valine:
+
+  # MiniValine
+  # https://github.com/MiniValine/MiniValine
+  # Version 2.7.5
+  minivaline:
+
+  # Artalk
+  # https://github.com/qwqcode/Artalk
+  # Version 1.0.6
+  artalk:
+    css:
+    js:
+
+  # Wildfire comments system
+  # https://github.com/cheng-kang/wildfire/
+  # Version: 0.3.9
+  wildfire:
+
+  # Twikoo
+  # https://github.com/imaegoo/twikoo
+  # Version 0.3.2
+  twikoo:
+
+  # MathJax
+  # https://www.mathjax.org/
+  # Version: 3
+  mathjax:
+
+  # KaTeX
+  # https://katex.org/
+  # Version 0.12.0
+  katex:
+    css:
+    js:
+
+  # Mermiad Disgrams
+  # https://mermaid-js.github.io/
+  # Version 8.10.2
+  mermaid:
+
+  # busuanzi counter js
+  # https://busuanzi.ibruce.info
+  busuanzi:
+
+  # Artitalk js
+  # https://github.com/ArtitalkJS/Artitalk
+  # Version: 3.1.2
+  artitalk:
+
+  # jQuery js
+  # https://github.com/jquery/jquery/
+  # Version: 3.4.1
+  jquery:
+
+  # fancybox css
+  # https://github.com/fancyapps/fancybox/
+  # Version: 3.5.7
+  fancybox:
+    css:
+    js:
+
+  custom_script:
+    # - ''
+    # - ''
