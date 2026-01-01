@@ -7,19 +7,24 @@
     const setLS = (k, v) => {
         try {
             localStorage.setItem(k, v);
-        } catch (e) {}
+        } catch (e) {
+            console.error('Failed to set localStorage:', e);
+        }
     };
 
     const removeLS = (k) => {
         try {
             localStorage.removeItem(k);
-        } catch (e) {}
+        } catch (e) {
+            console.error('Failed to remove from localStorage:', e);
+        }
     };
 
     const getLS = (k) => {
         try {
             return localStorage.getItem(k);
         } catch (e) {
+            console.error('Failed to get from localStorage:', e);
             return null;
         }
     };
@@ -98,8 +103,10 @@
 
     window.onload = () => {
         const darkModeToggleBottonElement = document.getElementById('btn-toggle-dark');
-        darkModeToggleBottonElement.addEventListener('click', () => {
-            applyCustomDarkModeSettings(toggleCustomDarkMode());
-        });
+        if (darkModeToggleBottonElement) {
+            darkModeToggleBottonElement.addEventListener('click', () => {
+                applyCustomDarkModeSettings(toggleCustomDarkMode());
+            });
+        }
     };
 })();

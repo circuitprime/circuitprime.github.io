@@ -28,10 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
         var windowPageYOffset = window.pageYOffset || document.documentElement.scrollTop;
         if (windowPageYOffset > windowViewPortHeight) {
             goTopButton.style.display = 'block';
-            isRequestingAnimationFrame = false;
         } else {
             goTopButton.style.display = 'none';
-            requestAnimationFrame(filterGoTopButtonVisibility);
         }
+        isRequestingAnimationFrame = false;
     }
 });

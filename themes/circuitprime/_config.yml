@@ -266,7 +266,7 @@ footer:
     # - ''
 
 lazyload:
-  enable: false
+  enable: true
   loadingImage:
 
 search:
